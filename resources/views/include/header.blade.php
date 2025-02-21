@@ -60,49 +60,49 @@
 											<div class="col-md-2">
 												<h6>Graphic Designers</h6>
 												<ul class="list-unstyled">
-													<li><a href="#">UI/UX Designer</a></li>
-													<li><a href="#">Web Designer</a></li>
+													<li><a href="{{ route('uiuxdesign') }}">UI/UX Designer</a></li>
+													<li><a href="{{ route('webdesigner')}}">Web Designer</a></li>
 												</ul>
 											</div>
 											<!-- Column 2 -->
 											<div class="col-md-2">
 												<h6>Frontend Developers</h6>
 												<ul class="list-unstyled">
-													<li><a href="#">React.js Developer</a></li>
-													<li><a href="#">Angular Developer</a></li>
-													<li><a href="#">Vue.js Developer</a></li>
+													<li><a href="reactdeveloper">React.js Developer</a></li>
+													<li><a href="angulardeveloper">Angular Developer</a></li>
+													<li><a href="vuedeveloper">Vue.js Developer</a></li>
 												</ul>
 											</div>
 											<!-- Column 3 -->
 											<div class="col-md-2">
 												<h6>Backend Developers</h6>
 												<ul class="list-unstyled">
-													<li><a href="#">PHP Developer</a></li>
-													<li><a href="#">Laravel Developer</a></li>
-													<li><a href="#">.NET Developer</a></li>
-													<li><a href="#">Node.js Developer</a></li>
-													<li><a href="#">Python Developer</a></li>
+													<li><a href="phpdeveloper">PHP Developer</a></li>
+													<li><a href="laraveldeveloper">Laravel Developer</a></li>
+													<li><a href="netdeveloper">.NET Developer</a></li>
+													<li><a href="nodedeveloper">Node.js Developer</a></li>
+													<li><a href="pythondeveloper">Python Developer</a></li>
 												</ul>
 											</div>
 											<!-- Column 4 -->
 											<div class="col-md-2">
 												<h6>Mobile Developers</h6>
 												<ul class="list-unstyled">
-													<li><a href="#">iOS Developer</a></li>
-													<li><a href="#">Android Developer</a></li>
-													<li><a href="#">Ionic Developer</a></li>
-													<li><a href="#">Flutter Developer</a></li>
-													<li><a href="#">React Native Developer</a></li>
+													<li><a href="iosdeveloper">iOS Developer</a></li>
+													<li><a href="androiddeveloper">Android Developer</a></li>
+													<li><a href="ionicdeveloper">Ionic Developer</a></li>
+													<li><a href="flutterdeveloper">Flutter Developer</a></li>
+													<li><a href="reactnativedeveloper">React Native Developer</a></li>
 												</ul>
 											</div>
 											<!-- Column 5 -->
 											<div class="col-md-2">
 												<h6>CMS Developers</h6>
 												<ul class="list-unstyled">
-													<li><a href="#">WordPress Developer</a></li>
-													<li><a href="#">Shopify Developer</a></li>
-													<li><a href="#">Magento Developer</a></li>
-													<li><a href="#">Drupal Developer</a></li>
+													<li><a href="wordpressdeveloper">WordPress Developer</a></li>
+													<li><a href="shopifydeveloper">Shopify Developer</a></li>
+													<li><a href="magentodeveloper">Magento Developer</a></li>
+													<li><a href="drupaldeveloper">Drupal Developer</a></li>
 												</ul>
 											</div>
 										</div>
@@ -118,44 +118,44 @@
                                                 <div class="col-md-2">
                                                     <h6>Hire Services</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">Hire Dedicated Developers</a></li>
+                                                        <li><a href="hiredevelopers">Hire Dedicated Developers</a></li>
                                                     </ul>
                                                 </div>
                                                 <!-- Column 2 -->
                                                 <div class="col-md-2">
                                                     <h6>Development Services</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">Graphic Designers</a></li>
-                                                        <li><a href="#">Web Application Development</a></li>
-                                                        <li><a href="#">Web Portal Development Services</a></li>
-                                                        <li><a href="#">Mobile App Development</a></li>
-                                                        <li><a href="#">Front End Development</a></li>
-                                                        <li><a href="#">Enterprise Software Development</a></li>
-                                                        <li><a href="#">Offshore Software Development</a></li>
-                                                        <li><a href="#">AI Software Development</a></li>
+                                                        <li><a href="graphicsdesigners">Graphic Designers</a></li>
+                                                        <li><a href="webapp">Web Application Development</a></li>
+                                                        <li><a href="webportal">Web Portal Development Services</a></li>
+                                                        <li><a href="mobileapp">Mobile App Development</a></li>
+                                                        <li><a href="frontenddevelopment">Front End Development</a></li>
+                                                        <li><a href="enterprisesoftware">Enterprise Software Development</a></li>
+                                                        <li><a href="offshoresoftwarer">Offshore Software Development</a></li>
+                                                        <li><a href="aisoftwaredevelopment">AI Software Development</a></li>
                                                     </ul>
                                                 </div>
                                                 <!-- Column 3 -->
                                                 <div class="col-md-2">
                                                     <h6>Support Services</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">Digital Marketing</a></li>
-                                                        <li><a href="#">Virtual Assistant</a></li>
-                                                        <li><a href="#">Data Analytics & BI</a></li>
+                                                        <li><a href="digitalmarketing">Digital Marketing</a></li>
+                                                        <li><a href="virtualsassistant">Virtual Assistant</a></li>
+                                                        <li><a href="dataanalytics">Data Analytics & BI</a></li>
                                                     </ul>
                                                 </div>
                                                 <!-- Column 4 -->
                                                 <div class="col-md-2">
                                                     <h6>Testing Services</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">QA & Software Testing Services</a></li>
+                                                        <li><a href="qasoftware">QA & Software Testing Services</a></li>
                                                     </ul>
                                                 </div>
                                                 <!-- Column 5 -->
                                                 <div class="col-md-2">
                                                     <h6>Devops Services</h6>
                                                     <ul class="list-unstyled">
-                                                        <li><a href="#">DevOps Consulting Services</a></li>
+                                                        <li><a href="devops">DevOps Consulting Services</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -168,24 +168,24 @@
                                         <ul class="sub-menu collapse" id="submenu-1-2">
                                             <li class="nav-item"><a href="about-us.html">Case Studies</a>
                                                 <ul class="sub-menu collapse" id="submenu-1-2">
-                                                    <li class="nav-item"><a href="about-us.html">Zero Trust</a></li>
-                                                    <li class="nav-item"><a href="pricing.html">Mustard</a></li>
-                                                    <li class="nav-item"><a href="services.html">ICam</a></li>
+                                                    <li class="nav-item"><a href="zerotrust">Zero Trust</a></li>
+                                                    <li class="nav-item"><a href="mustad">Mustard</a></li>
+                                                    <li class="nav-item"><a href="icam">ICam</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="nav-item"><a href="pricing.html">Testimonial</a></li>
-                                            <li class="nav-item"><a href="services.html">Blog</a></li>
+                                            <li class="nav-item"><a href="testimonial">Testimonial</a></li>
+                                            <li class="nav-item"><a href="blog">Blog</a></li>
                                         </ul>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="contact.html" aria-label="Toggle navigation">About us</a>
+                                        <a href="aboutus" aria-label="Toggle navigation">About us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="contact.html" aria-label="Toggle navigation">Career</a>
+                                        <a href="career" aria-label="Toggle navigation">Career</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="contact.html" aria-label="Toggle navigation">Contact us</a>
+                                        <a href="contactus" aria-label="Toggle navigation">Contact us</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
