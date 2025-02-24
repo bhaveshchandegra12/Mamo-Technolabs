@@ -36,8 +36,7 @@
                                 Business
                                 goals and user preferences, that the website developed will be remarkable.</li>
                                 <li><strong> Responsive and Optimized Designs:</strong> Fully responsive web designs.
-                                and
-                                optimized for all devices, and provides a smooth experience for the user.</li>
+                                and optimized for all devices, and provides a smooth experience for the user.</li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-sm-12">
@@ -75,8 +74,7 @@
                             <h3>Why MaMo Technolabs?</h3>
                             <ul>
                                 <li><strong>Experienced Team:</strong> Our team of web designers brings years of experience
-                                in
-                                to make visually striking, highly functional web sites.</li>
+                                into make visually striking, highly functional web sites.</li>
                                 <li><strong>Client-Centric Approach:</strong> We collaborate closely with you to ensure the
                                 The final design aligns perfectly with your vision and business goals.</li>
                                 <li><strong>Cost-Effective Solutions:</strong> Our pricing is competitive, and we provide
