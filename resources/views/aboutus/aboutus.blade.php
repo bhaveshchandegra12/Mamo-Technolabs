@@ -27,24 +27,29 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12">
-                    <img src="assets/images/about/about-image.png" alt="#">
+                    <video src="{{ asset('img/mamo-technolabs-llp.mp4') }}" alt="#">
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="content">
                         <h4>About Us</h4>
-                        <h2>We Are The Leader<br> in Digital Marketing</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium.</p>
-                        <p>If a website accomplishes its goals and works well, then igood web design. This might mean
-                            different things for each website, but all good web design will have certain in
-                            common.</p>
-                        <div class="list">
+                        <h2>A Team of<br> Experienced Professionals</h2>
+                        <p>MaMo Technolabs LLP is a leading provider of offshore software development services,
+                            specializing in SaaS products, mobile solutions, and PaaS implementations. We prioritize
+                            compliance, scalability, and protection of intellectual property, providing an expert team for
+                            Software development, testing, support, and maintenance. With an experience of over a decade;
+                            we deliver top talent, managed services, and consulting, ensuring optimal performance for
+                            modern software and QA teams.</p>
+                        <p> Our offerings are designed for organizations of all sizes, optimizing investments throughout
+                            the software development lifecycle. Executives can trust our development process, reducing
+                            micromanagement and allowing focus on strategic decisions.</p>
+                        {{-- <div class="list">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="single-list">
                                         <div class="list-icon">
                                             <i class="lni lni-users"></i>
                                         </div>
-                                        <h4>Amazing Partners</h4>
+                                        <h4>Why Choose MaMo Technolabs LLP?</h4>
                                         <p>Quis autem vel eum reprehenderit</p>
                                     </div>
                                 </div>
@@ -58,7 +63,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -68,21 +73,45 @@
 
     <!-- Start About Area -->
     <section class="about section">
-        <div class="shape-1">
-            <img src="assets/images/about/shape1.svg" alt="#">
-        </div>
-        <div class="shape-2">
-            <img src="assets/images/about/shape2.svg" alt="#">
-        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12">
                     <div class="content">
-                        <h4>Why Choose Us</h4>
-                        <h2>We Provide Best Digital Marketing Solutions</h2>
-                        <p>Corporate headquarters is the part of a corporate structure that
-                            deals with important tasks such as strategic planning.</p>
-                        <ul class="why-choose-list">
+                        <h4>Why Choose MaMo Technolabs LLP?</h4>
+                        
+                            <ul>
+                                <li>Proven management practices and thought leadership</li>
+                                <li>Quick delivery with an employee turnover rate of 7%</li>
+                                <li>Extensive operating history with satisfied clients</li>
+                                <li>Effective recruitment and vetting processes</li>
+                                <li>Solutions that are suited to client specifications</li>
+                                <li>Professional learning and training on an ongoing basis for our workforce</li>
+                                <li>Comprehensive code audits</li>
+                            </ul>
+                            <p>
+                                While we excel in various industries, we have notable expertise in:
+                            </p>
+
+                            
+                            <ul>
+                                <li>Consumer Products</li>
+                                <li>Manufacturing</li>
+                                <li>Cyber Security Services</li>
+                                <li>Public Safety</li>
+                                <li>SaaS</li>
+                            </ul>
+
+                            <h3>Our Services Include:</h3>
+                        <ul>
+                            <li>Flexible Software Solutions</li>
+                            <li>Increased Output & Cost Efficiency</li>
+                            <li>Skilled Agile Engineering Teams</li>
+                            <li>High-Quality Code Standards</li>
+                            <li>Industry-Compliant Solutions</li>
+                            <li>Continuous Client Satisfaction</li>
+                        </ul>
+                        
+                        {{-- <ul class="why-choose-list">
                             <li>
                                 <span class="number">1</span>
                                 <div class="list-content">
@@ -107,11 +136,11 @@
                                         structure that deals with important</p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <img src="assets/images/why-choose/why-choose.png" alt="#">
+                    <img src="{{ asset('img/about.png') }}" alt="#">
                 </div>
             </div>
         </div>
@@ -119,7 +148,7 @@
     <!-- End About Area -->
 
     <!-- Start Achievement App -->
-    <section class="achievement section">
+    {{-- <section class="achievement section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -179,11 +208,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Achievement App -->
 
     <!-- Start Testimonials Area -->
-    <section class="testimonials style2 section">
+    {{-- <section class="testimonials style2 section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -318,7 +347,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Testimonial Area -->
 
     <!-- Start Team Area -->
@@ -327,10 +356,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Team</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Team</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Team Members</h3>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Professional Stuffs Ready to Help Your Business.</p>
                     </div>
                 </div>
             </div>
@@ -339,17 +366,13 @@
                     <!-- Start Single Team -->
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="assets/images/team/team1.jpg" alt="#">
+                            <img src="img/team-1.jpg" alt="#">
                         </div>
                         <div class="content">
-                            <h4>Liza Marko
-                                <span>Graphics Designer</span>
+                            <h4>Full Name
+                                <span>Designation</span>
                             </h4>
-                            <ul class="social">
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                     <!-- End Single Team -->
@@ -358,17 +381,13 @@
                     <!-- Start Single Team -->
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="assets/images/team/team2.jpg" alt="#">
+                            <img src="img/team-2.jpg" alt="#">
                         </div>
                         <div class="content">
-                            <h4>John Smith
-                                <span>Digital Marketer</span>
+                            <h4>Full Name
+                                <span>Designation</span>
                             </h4>
-                            <ul class="social">
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                     <!-- End Single Team -->
@@ -377,17 +396,12 @@
                     <!-- Start Single Team -->
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="assets/images/team/team3.jpg" alt="#">
+                            <img src="img/team-3.jpg" alt="#">
                         </div>
                         <div class="content">
-                            <h4>Amion Doe
-                                <span>Web Developer</span>
+                            <h4>Full Name
+                                <span>Designation</span>
                             </h4>
-                            <ul class="social">
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
                         </div>
                     </div>
                     <!-- End Single Team -->
@@ -397,7 +411,7 @@
     </section>
     <!--/ End Team Area -->
 
-    <!-- Start Clients Logo Area -->
+    {{-- <!-- Start Clients Logo Area -->
     <div class="client-logo">
         <div class="container">
             <div class="row align-items-center">
@@ -424,7 +438,7 @@
             </div>
         </div>
     </div>
-    <!-- End Clients Logo Area -->
+    <!-- End Clients Logo Area --> --}}
 
 
 
