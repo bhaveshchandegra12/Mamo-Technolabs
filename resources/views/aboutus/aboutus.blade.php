@@ -1,519 +1,487 @@
 @extends('layout.app')
 @section('main')
-  <!-- Navbar Start -->
-  <div class="container-fluid position-relative p-0">
-        
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-            <div class="row py-5">
-                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">About Us</h1>
-                    <a href="{{ url('/') }}" class="h5 text-white">Home</a>
-                    <i class="far fa-circle text-white px-2"></i>
-                    <a href="#" class="h5 text-white">About</a>
+
+
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">About Us</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li>About Us</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Navbar End -->
+    <!-- End Breadcrumbs -->
 
-    <section id="about-us" class="about-us py-5">
+    <!-- Start Process Area -->
+    <section class="process section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="video-container mb-4 position-relative video-frame"> <!-- Added video-frame class -->
-                        <img src="{{ asset('img/thumbnail.png') }}" alt="About Us" class="img-fluid rounded"
-                            id="video-thumbnail" style="cursor: pointer;">
-                        <video id="video-player" class="d-none" controls playsinline width="100%" height="auto">
-                            <source src="{{ asset('img/mamo-technolabs-llp.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <a href="javascript:void(0)" class="video-play-button" id="play-button">
-                            <span class="video-play-icon">&#9658;</span> <!-- Play icon -->
-
-                        </a>
-                    </div>
-
-                    <style>
-                        .video-container {
-                            position: relative;
-                            display: inline-block;
-                            max-width: 640px;
-                            /* Set maximum width for the container */
-                            width: 100%;
-                            /* Responsive */
-                            overflow: hidden;
-                            /* Prevent overflow */
-                            border-radius: 8px;
-                            /* Optional: rounded corners */
-                        }
-
-                        .video-frame {
-                            border: 5px solid #000000;
-                            /* Frame color and width */
-                            border-radius: 10px;
-                            /* Optional: rounded corners for the frame */
-                            padding: 5px;
-                            /* Padding between the frame and video */
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                            /* Optional: shadow for depth */
-                        }
-
-                        .video-play-button {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            display: inline-block;
-                            width: 70px;
-                            height: 70px;
-                            background-color: rgba(0, 0, 0, 0.5);
-                            /* Semi-transparent background */
-                            border-radius: 50%;
-                            text-align: center;
-                            line-height: 70px;
-                            color: white;
-                            font-size: 24px;
-                            text-decoration: none;
-                        }
-
-                        video {
-                            width: 100%;
-                            /* Responsive width */
-                            height: auto;
-                            /* Maintain aspect ratio */
-                        }
-                    </style>
-
-                    <script>
-                        const playButton = document.getElementById('play-button');
-                        const videoPlayer = document.getElementById('video-player');
-                        const videoThumbnail = document.getElementById('video-thumbnail');
-
-                        playButton.addEventListener('click', () => {
-                            videoThumbnail.classList.add('d-none'); // Hide thumbnail
-                            playButton.classList.add('d-none'); // Hide play button
-                            videoPlayer.classList.remove('d-none'); // Show video player
-                            videoPlayer.play(); // Start playing the video
-                        });
-
-                        // Optional: Handle mobile events for better compatibility
-                        videoPlayer.addEventListener('ended', () => {
-                            videoThumbnail.classList.remove('d-none'); // Show thumbnail when video ends
-                            playButton.classList.remove('d-none'); // Show play button when video ends
-                            videoPlayer.classList.add('d-none'); // Hide video player when video ends
-                        });
-                    </script>
-
-
-
+                <div class="col-lg-6 col-12">
+                    <img src="assets/images/about/about-image.png" alt="#">
                 </div>
-                <div class="col-lg-6">
-
-                    <h2 class="mb-3">ABOUT US</h2>
-                    <h3>A Team of <span class="text-primary">Experienced Professionals</span></h3>
-                    <div class="about-us">
-                        {{-- <h2>MaMo Technolabs LLP</h2> --}}
-                        <p>
-                            MaMo Technolabs LLP is a leading provider of offshore software development services,
-                            specializing in SaaS products, mobile solutions, and PaaS implementations. We prioritize
-                            compliance, scalability, and protection of intellectual property, providing an expert team for
-                            Software development, testing, support, and maintenance. With an experience of over a decade;
-                            we deliver top talent, managed services, and consulting, ensuring optimal performance for
-                            modern software and QA teams.
-                        </p>
-
-                        <p>
-                            Our offerings are designed for organizations of all sizes, optimizing investments throughout
-                            the software development lifecycle. Executives can trust our development process, reducing
-                            micromanagement and allowing focus on strategic decisions.
-                        </p>
-                    </div>
-
-                    {{-- <div class="awards">
-                        <div class="award-item">
-                            <h4>10+</h4>
-                            <p>Awards</p>
+                <div class="col-lg-6 col-12">
+                    <div class="content">
+                        <h4>About Us</h4>
+                        <h2>We Are The Leader<br> in Digital Marketing</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium.</p>
+                        <p>If a website accomplishes its goals and works well, then igood web design. This might mean
+                            different things for each website, but all good web design will have certain in
+                            common.</p>
+                        <div class="list">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="single-list">
+                                        <div class="list-icon">
+                                            <i class="lni lni-users"></i>
+                                        </div>
+                                        <h4>Amazing Partners</h4>
+                                        <p>Quis autem vel eum reprehenderit</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="single-list">
+                                        <div class="list-icon">
+                                            <i class="lni lni-bolt-alt"></i>
+                                        </div>
+                                        <h4>Finalize & Publish</h4>
+                                        <p>Quis autem vel eum reprehenderit</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="award-item">
-                            <h4>100+</h4>
-                            <p>Professional Staffs</p>
-                        </div>
-                        <div class="award-item">
-                            <h4>350+</h4>
-                            <p>Projects Done</p>
-                        </div>
-                    </div> --}}
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h3>Why Choose MaMo Technolabs LLP?</h3>
-                        <ul>
-                            <li>Proven management practices and thought leadership</li>
-                            <li>Quick delivery with an employee turnover rate of 7%</li>
-                            <li>Extensive operating history with satisfied clients</li>
-                            <li>Effective recruitment and vetting processes</li>
-                            <li>Solutions that are suited to client specifications</li>
-                            <li>Professional learning and training on an ongoing basis for our workforce</li>
-                            <li>Comprehensive code audits</li>
-                        </ul>               
-                        <p>
-                            While we excel in various industries, we have notable expertise in:
-                        </p>
-
-                        <ul>
-                            <li>Consumer Products</li>
-                            <li>Manufacturing</li>
-                            <li>Cyber Security Services</li>
-                            <li>Public Safety</li>
-                            <li>SaaS</li>
-                        </ul>
-
-                        <h3>Our Services Include:</h3>
-                        <ul>
-                            <li>Flexible Software Solutions</li>
-                            <li>Increased Output & Cost Efficiency</li>
-                            <li>Skilled Agile Engineering Teams</li>
-                            <li>High-Quality Code Standards</li>
-                            <li>Industry-Compliant Solutions</li>
-                            <li>Continuous Client Satisfaction</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="{{ asset('img/about.png') }}" alt="About Us" class="img-fluid rounded"
-                            style="cursor: pointer;">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+    <!-- End Process Area -->
 
-    
-
-
-    <!-- About Start 1-->
-    {{-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">The Best IT Solution With Decade Of Experience</h1>
-                    </div>
-                    <p class="mb-4">MaMo Technolabs LLP is a trusted choice for high-quality offshore software
-                        development, specializing in building SaaS products, mobile business solutions, and PaaS
-                        implementation. With a strong focus on compliance, scalability, and IP protection, we offer
-                        expert teams for software development, testing, support, and maintenance.
-
-                        With over a decade of combined experience in technical leadership and software development, we
-                        deliver top-tier talent, managed services, and consulting. Our client and candidate engagement
-                        process ensures optimal performance for modern software and QA teams, driving long-term success.
-                    </p>
-
-                    <p class="mb-4">
-                        MaMo Technolabs LLP's software carrier offerings broadly appear as "excellent-of-breed" and are
-                        aimed at organizations spanning from SMBs to large businesses to higher help:
-                    </p>
-                    <p class="mb-4">
-                        Optimize investment all through the software program improvement life-cycle. Executives and
-                        supervisors have confidence in the development manner, decreasing micromanagement and enabling
-                        them to concentrate greater on business decisions.
-                    </p>
-
-                    <p class="mb-4">
-                        What makes MaMo Technolabs LLP incredible?
-                    </p>
-                    <ol>
-                        <li>Proven management practices imparting concept leadership, governance, and consulting
-                            services.</li>
-                        <li>The rapidity of the concept and answer delivery ends in a low worker turnover rate of 7%.
-                        </li>
-                        <li>Operating history and super customers.</li>
-                        <li>Proven systems and techniques for recruiting and vetting candidates.</li>
-                        <li>Align the answer with the patron's requirements.</li>
-                        <li>Unique in our enterprise is the continuing control and supervision of professional
-                            development and continued education for positioned assets.</li>
-                        <li>We conduct exhaustive code audits.</li>
-                    </ol>
-
-
-                    <p class="mb-4">
-                        MaMo Technolabs LLP is effective in any enterprise; however, the organization has acquired
-                        significant traction and expertise in several high-profile sectors, such as:
-                    </p>
-                    <ul>
-                        <li>Consumer Products</li>
-                        <li>Manufacturing</li>
-                        <li>Cyber Security Services</li>
-                        <li>Public Safety</li>
-                        <li>SaaS</li>
-                    </ul>
-
-                    <p class="mt-4 mb-2">About MaMo Technolabs LLP Services:</p>
-                    <ul>
-                        <li>Flexible Software Solutions</li>
-                        <li>Increase Output</li>
-                        <li>Increase Output & Decrease Cost</li>
-                        <li>Skilled Agile Engineering Teams</li>
-                        <li>High-Caliber Code Quality</li>
-                        <li>Industry-Compliant Solutions</li>
-                        <li>Constant Client Satisfaction</li>
-                    </ul>
-
-
-
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
-                        </div>
-                    </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
-                        data-wow-delay="0.9s">Request
-                        A Quote</a>
-                </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                            loading="lazy" src="img/about.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-            </div>
-
+    <!-- Start About Area -->
+    <section class="about section">
+        <div class="shape-1">
+            <img src="assets/images/about/shape1.svg" alt="#">
         </div>
-    </div> --}}
-    <!-- About End 1-->
-
-    <!-- About Start 2-->
-    {{-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                            loading="lazy" src="img/about.jpg" style="object-fit: cover;">
+        <div class="shape-2">
+            <img src="assets/images/about/shape2.svg" alt="#">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="content">
+                        <h4>Why Choose Us</h4>
+                        <h2>We Provide Best Digital Marketing Solutions</h2>
+                        <p>Corporate headquarters is the part of a corporate structure that
+                            deals with important tasks such as strategic planning.</p>
+                        <ul class="why-choose-list">
+                            <li>
+                                <span class="number">1</span>
+                                <div class="list-content">
+                                    <h3>Fast Working Process</h3>
+                                    <p>Corporate headquarters is the part of a corporate
+                                        structure that deals with important</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">2</span>
+                                <div class="list-content">
+                                    <h3>Dedicated Team</h3>
+                                    <p>Corporate headquarters is the part of a corporate
+                                        structure that deals with important</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">2</span>
+                                <div class="list-content">
+                                    <h3>24/7 Hours Support</h3>
+                                    <p>Corporate headquarters is the part of a corporate
+                                        structure that deals with important</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-             
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">IT Outsourcing Services</h5>
-                        <h2 class="mb-0">Transform Your Business with MaMo Technolabs
-                        </h2>
-                    </div>
-                    <p class="mb-4">At MaMo Technolabs, we offer complete IT outsourcing answers designed to beautify
-                        your enterprise operations, streamline procedures, and drive innovation. Our tailor-made
-                        offerings are crafted to fulfill the unique needs of your company, making sure you stay
-                        beforehand in an aggressive landscape.
-
-                    </p>
-
-                    <h2 class="mb-0">Why Choose IT Outsourcing?</h2>
-                    <p class="mb-4">
-                        Outsourcing your IT desires can liberate several blessings for your enterprise, together:
-                    </p>
-                    <p class="mb-4">
-                        Optimize investment all through the software program improvement life-cycle. Executives and
-                        supervisors have confidence in the development manner, decreasing micromanagement and enabling
-                        them to concentrate greater on business decisions.
-                    </p>
-
-                    <p class="mb-4">
-                        What makes MaMo Technolabs LLP incredible?
-                    </p>
-
-                    <ol>
-                        <li><b>Cost Efficiency</b>: Reduce operational charges with the aid of leveraging our
-                            information and
-                            assets.</li>
-                        <li><b>Focus on Core Business</b>: Allow your group to pay attention to strategic sports while
-                            we take
-                            care of the technical details.</li>
-                        <li><b>Access to Expertise</b>: Gain admission to professional experts with specialized
-                            knowledge in
-                            diverse IT domains.</li>
-                        <li><b>Scalability</b>: Quickly modify resources and services in line with your business needs
-                            without
-                            the hassle of hiring and training new staff.</li>
-                    </ol>
-
-
-                    <h2 class="mb-0">Our IT Outsourcing Services</h2>
-                    <h2>Our Services</h2>
-                    <ol>
-                        <li>
-                            <strong>IT Infrastructure Management:</strong>
-                            We cope with the complexities of handling your IT infrastructure, ensuring smooth operation
-                            and minimal downtime.
-                            Our services encompass server management, network monitoring, and data center operations.
-                        </li>
-                        <li>
-                            <strong>Application Development and Maintenance:</strong>
-                            Our team delivers custom software solutions tailored to your business requirements. From
-                            initial development to ongoing maintenance and updates,
-                            we ensure your applications are robust, secure, and aligned with your goals.
-                        </li>
-                        <li>
-                            <strong>Cloud Services:</strong>
-                            Optimize your cloud environment with our end-to-end cloud services. We offer cloud strategy,
-                            migration, management, and support to help your business harness the full potential of cloud
-                            technology.
-                        </li>
-                        <li>
-                            <strong>IT Support and Help Desk:</strong>
-                            Experience seamless IT support with our dedicated help desk services. We provide timely
-                            assistance, troubleshoot issues, and resolve technical problems to keep your operations
-                            running smoothly.
-                        </li>
-                        <li>
-                            <strong>Cybersecurity Solutions:</strong>
-                            Protect your business from digital threats with our comprehensive cybersecurity services. We
-                            implement advanced security measures, conduct regular audits, and respond to incidents to
-                            safeguard your data and assets.
-                        </li>
-                        <li>
-                            <strong>Data Management and Analytics:</strong>
-                            Transform your data into actionable insights with our data management and analytics
-                            services. We help you collect, store, and analyze data to make informed decisions and drive
-                            business growth.
-                        </li>
-                    </ol>
-                             
-                    <h2>Why MaMo Technolabs?</h2>
-                    <p>
-                        At MaMo Technolabs, we're committed to delivering excellence in every project.
-                        Our approach is centered around understanding your unique needs and providing solutions that add
-                        value to your business.
-                        With our team of experienced professionals and cutting-edge technology, we ensure the highest
-                        standards of service and support.
-                    </p>
-            
-                    <h2>Ready to Outsource?</h2>
-                    <p>
-                        Partner with MaMo Technolabs to experience the benefits of efficient and effective IT
-                        outsourcing.
-                        Contact us today to discuss how our services can help your business thrive.
-                    </p>
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
-                        </div>
-                    </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
-                        data-wow-delay="0.9s">Request
-                        A Quote</a>
+                <div class="col-lg-6 col-12">
+                    <img src="assets/images/why-choose/why-choose.png" alt="#">
                 </div>
             </div>
         </div>
-    </div> --}}
-    <!-- About End 2 -->
+    </section>
+    <!-- End About Area -->
 
-
-    <!-- Team Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+    <!-- Start Achievement App -->
+    <section class="achievement section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Our achievement </h2>
+                        <p>There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-1.jpg" loading="lazy" alt="team-1-image">
-                            {{-- <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div> --}}
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement align-center wow fadeInUp" data-wow-delay=".2s">
+                                <h3 class="counter">
+                                    <svg class="shape" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M47.1868 15.7745C42.7476 11.5909 36.9073 9.25816 30.9507 9.28958C24.9941 9.32099 19.4092 11.714 15.4245 15.942C11.4399 20.1701 9.38191 25.887 9.70335 31.835C10.0248 37.783 12.6993 43.4748 17.1386 47.6585L32.1627 31.7165L47.1868 15.7745Z"
+                                            fill="#FF4E79" />
+                                    </svg>
+                                    <span id="secondo1" class="countup" cup-end="100">100</span>%
+                                </h3>
+                                <p>Satisfaction</p>
+                            </div>
                         </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement align-center wow fadeInUp" data-wow-delay=".4s">
+                                <h3 class="counter">
+                                    <svg class="shape" width="35" height="38" viewBox="0 0 35 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M34.2973 10.7613C30.436 7.90726 25.6931 6.5768 21.1119 7.06265C16.5308 7.54849 12.4866 9.81085 9.86915 13.352C7.25169 16.8932 6.27532 21.4231 7.15483 25.9452C8.03433 30.4673 10.6977 34.6112 14.559 37.4653L24.4281 24.1133L34.2973 10.7613Z"
+                                            fill="#FE8432" fill-opacity="0.83" />
+                                    </svg>
+                                    <span id="secondo2" class="countup" cup-end="120">120</span>K
+                                </h3>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement align-center wow fadeInUp" data-wow-delay=".6s">
+                                <h3 class="counter">
+                                    <svg class="shape" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M47.1868 15.7745C42.7476 11.5909 36.9073 9.25816 30.9507 9.28958C24.9941 9.32099 19.4092 11.714 15.4245 15.942C11.4399 20.1701 9.38191 25.887 9.70335 31.835C10.0248 37.783 12.6993 43.4748 17.1386 47.6585L32.1627 31.7165L47.1868 15.7745Z"
+                                            fill="#B998FF" />
+                                    </svg>
+                                    <span id="secondo3" class="countup" cup-end="500">500</span>+
+                                </h3>
+                                <p>Projects Done</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-2.jpg" loading="lazy" alt="team-2-image">
-                            {{-- <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div> --}}
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Achievement App -->
+
+    <!-- Start Testimonials Area -->
+    <section class="testimonials style2 section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Customer Reviews</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Testimonials</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-3.jpg" loading="lazy" alt="team-3-image">
-                            {{-- <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div> --}}
+            </div>
+            <div class="row testimonial-slider">
+                <div class="col-lg-6 col-12 ">
+                    <!-- Start Single Testimonial -->
+                    <div class="single-testimonial">
+                        <img class="shape1" src="assets/images/testimonial/shape-1.svg" alt="#">
+                        <img class="shape2" src="assets/images/testimonial/shape-2.svg" alt="#">
+                        <div class="inner-content">
+                            <div class="qote-icon">
+                                <i class="lni lni-quotation"></i>
+                            </div>
+                            <div class="text">
+                                <h4>On the other hand denoun with righteous
+                                    and disliks men who are beguiled demorae
+                                    momentc blinded by desire that can</h4>
+                            </div>
+                            <div class="author">
+                                <img src="assets/images/testimonial/testi-1.png" alt="#">
+                                <h4 class="name">Somalia D Silva
+                                    <span class="deg">Business Manager</span>
+                                </h4>
+                            </div>
                         </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
+                    </div>
+                    <!-- End Single Testimonial -->
+                </div>
+                <div class="col-lg-6 col-12 ">
+                    <!-- Start Single Testimonial -->
+                    <div class="single-testimonial">
+                        <img class="shape1" src="assets/images/testimonial/shape-1.svg" alt="#">
+                        <img class="shape2" src="assets/images/testimonial/shape-2.svg" alt="#">
+                        <div class="inner-content">
+                            <div class="qote-icon">
+                                <i class="lni lni-quotation"></i>
+                            </div>
+                            <div class="text">
+                                <h4>On the other hand denoun with righteous
+                                    and disliks men who are beguiled demorae
+                                    momentc blinded by desire that can</h4>
+                            </div>
+                            <div class="author">
+                                <img src="assets/images/testimonial/testi-2.png" alt="#">
+                                <h4 class="name">David Warner
+                                    <span class="deg">Web Developer</span>
+                                </h4>
+                            </div>
                         </div>
+                    </div>
+                    <!-- End Single Testimonial -->
+                </div>
+                <div class="col-lg-6 col-12 ">
+                    <!-- Start Single Testimonial -->
+                    <div class="single-testimonial">
+                        <img class="shape1" src="assets/images/testimonial/shape-1.svg" alt="#">
+                        <img class="shape2" src="assets/images/testimonial/shape-2.svg" alt="#">
+                        <div class="inner-content">
+                            <div class="qote-icon">
+                                <i class="lni lni-quotation"></i>
+                            </div>
+                            <div class="text">
+                                <h4>On the other hand denoun with righteous
+                                    and disliks men who are beguiled demorae
+                                    momentc blinded by desire that can</h4>
+                            </div>
+                            <div class="author">
+                                <img src="assets/images/testimonial/testi-3.png" alt="#">
+                                <h4 class="name">Jems Gilario
+                                    <span class="deg">Graphics Designer</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Testimonial -->
+                </div>
+                <div class="col-lg-6 col-12 ">
+                    <!-- Start Single Testimonial -->
+                    <div class="single-testimonial">
+                        <img class="shape1" src="assets/images/testimonial/shape-1.svg" alt="#">
+                        <img class="shape2" src="assets/images/testimonial/shape-2.svg" alt="#">
+                        <div class="inner-content">
+                            <div class="qote-icon">
+                                <i class="lni lni-quotation"></i>
+                            </div>
+                            <div class="text">
+                                <h4>On the other hand denoun with righteous
+                                    and disliks men who are beguiled demorae
+                                    momentc blinded by desire that can</h4>
+                            </div>
+                            <div class="author">
+                                <img src="assets/images/testimonial/testi-2.png" alt="#">
+                                <h4 class="name">David Warner
+                                    <span class="deg">Web Developer</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Testimonial -->
+                </div>
+                <div class="col-lg-6 col-12 ">
+                    <!-- Start Single Testimonial -->
+                    <div class="single-testimonial">
+                        <img class="shape1" src="assets/images/testimonial/shape-1.svg" alt="#">
+                        <img class="shape2" src="assets/images/testimonial/shape-2.svg" alt="#">
+                        <div class="inner-content">
+                            <div class="qote-icon">
+                                <i class="lni lni-quotation"></i>
+                            </div>
+                            <div class="text">
+                                <h4>On the other hand denoun with righteous
+                                    and disliks men who are beguiled demorae
+                                    momentc blinded by desire that can</h4>
+                            </div>
+                            <div class="author">
+                                <img src="assets/images/testimonial/testi-3.png" alt="#">
+                                <h4 class="name">Jems Gilario
+                                    <span class="deg">Graphics Designer</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Testimonial -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Area -->
+
+    <!-- Start Team Area -->
+    <section class="team section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Team</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Team</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Team -->
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/images/team/team1.jpg" alt="#">
+                        </div>
+                        <div class="content">
+                            <h4>Liza Marko
+                                <span>Graphics Designer</span>
+                            </h4>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Single Team -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Team -->
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/images/team/team2.jpg" alt="#">
+                        </div>
+                        <div class="content">
+                            <h4>John Smith
+                                <span>Digital Marketer</span>
+                            </h4>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Single Team -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Team -->
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/images/team/team3.jpg" alt="#">
+                        </div>
+                        <div class="content">
+                            <h4>Amion Doe
+                                <span>Web Developer</span>
+                            </h4>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Single Team -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Team Area -->
+
+    <!-- Start Clients Logo Area -->
+    <div class="client-logo">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3 col-12 text-center">
+                    <div class="single-logo">
+                        <img src="assets/images/client-logo/graygrids-logo.svg" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 text-center">
+                    <div class="single-logo">
+                        <img src="assets/images/client-logo/lineicons-logo.svg" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 text-center">
+                    <div class="single-logo">
+                        <img src="assets/images/client-logo/pagebulb-logo.svg" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 text-center">
+                    <div class="single-logo">
+                        <img src="assets/images/client-logo/uideck-logo.svg" alt="#">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Team End -->		
+    <!-- End Clients Logo Area -->
+
+
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                1170: {
+                    items: 2,
+                }
+            }
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+    </script>
+</body>
+
+</html> 
 @endsection
