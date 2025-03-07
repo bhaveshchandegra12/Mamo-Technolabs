@@ -75,12 +75,12 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="{{ asset('user\js\bootstrap.min.js') }}"></script>
-    <script src="{{ asset('user\js\wow.min.js') }}"></script>
-    <script src="{{ asset('user\js\tiny-slider.js') }}"></script>
-    <script src="{{ asset('user\js\glightbox.min.js') }}"></script>
-    <script src="{{ asset('user\js\count-up.min.js') }}"></script>
-    <script src="{{ asset('user\js\main.js') }}"></script>
+    <script src="{{ asset('user/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('user/js/wow.min.js') }}"></script>
+    <script src="{{ asset('user/js/tiny-slider.js') }}"></script>
+    <script src="{{ asset('user/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('user/js/count-up.min.js') }}"></script>
+    <script src="{{ asset('user/js/main.js') }}"></script>
     <script>
         //========= testimonial 
         tns({

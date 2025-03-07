@@ -10,12 +10,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('user\img\hero\logo.png') }}" />
 
     <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="{{ asset('user\css\bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('user\css\LineIcons.3.0.css') }}" />
-    <link rel="stylesheet" href="{{ asset('user\css\animate.css') }}" />
-    <link rel="stylesheet" href="{{ asset('user\css\tiny-slider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('user\css\glightbox.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('user\css\main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('user/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('user/css/LineIcons.3.0.css') }}" />
+    <link rel="stylesheet" href="{{ asset('user/css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('user/css/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('user/css/glightbox.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('user/css/main.css') }}" />
 </head>
 
 <body>
@@ -216,3 +216,6 @@
         </div> <!-- container -->
     </header>
     <!-- End Header Area -->
+
+
+
