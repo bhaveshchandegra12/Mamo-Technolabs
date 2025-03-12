@@ -50,37 +50,6 @@
                 </div>
             </div>
 
-            <!-- Second Section: Image on the Left -->
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12">
-                    <img src="{{ asset('img/uiux-2.png') }}" alt="#">
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="content">
-                        <h3>Our UI/UX Design Services</h3>
-                            <ul>
-                                <li><strong>Custom UI/UX Design: </strong>Tailored design solutions to meet your brand's
-                                Requirements Integrating modern trends in designing catchy yet useful designs.
-                                </li>
-                                <li><strong>Wireframing and Prototyping:</strong> Creating in-depth wireframes and
-                                Prototypes
-                                to visualize and refine the design before implementation.</li>
-                                <li><strong>Responsive and Adaptive Design:</strong> Designing works well on the screen
-                                across
-                                devices and platforms, thus ensuring a uniform user experience.</li>
-                                <li><strong>User Research and Analysis:</strong> Deep analysis of user behavior and
-                                Have a preference towards crafting designs that resonate with your audience.</li>
-                                <li><strong>Design Optimization:</strong> Continuously improve the design based on
-                                feedback
-                                and performance metrics for long-term effectiveness.</li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Process Area -->
-
     <!-- Start Process Area -->
     <section class="process section">
         <div class="container">
@@ -114,5 +83,48 @@
     </section>
     <!-- End Process Area -->
 
+     <!-- Start Process Area -->
+     <section class="process section">
+        <div class="container">
+            <div class="row align-items-center">
+                    <div class="content">
+                        <h3>Why MaMo Technolabs?</h3>
+                        <ul>
+                            <li><strong>Creative Team:</strong> Our UI/UX designers bring innovation and creativity to
+                            every
+                            project, making your designs stand out.</li>
+                            <li><strong>Collaborative Approach:</strong> We work closely with you, valuing your input at
+                            every stage to create designs that exceed expectations.</li>
+                            <li><strong>Timely delivery:</strong> Our efficient processes and dedication ensure your
+                            project is delivered on time without compromising quality.</li>
+                        </ul>  
+                </div>
+            </div>
+        </div>
+</section>
+<!-- End Process Area -->
+
+<!-- Start Process Area -->
+<section class="process section">
+    <div class="container">
+        <div class="row align-items-center">
+                <div class="content">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h3>Hire UI/UX Designers Now</h3>
+                            <p>
+                                Partner with MaMo Technolabs for access to experienced UI/UX designers that will take your digital
+                                presence. Whether you need a fresh design or wish to improve an existing one, we’re here to
+                                help. Contact us today to bring your design ideas to life and create exceptional user
+                                experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Process Area -->
 
 @endsection
