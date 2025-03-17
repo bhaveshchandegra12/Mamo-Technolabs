@@ -114,7 +114,7 @@ class HireusController extends Controller
     public function enterprisesoftware(){
         return view('services.developmentservices.enterprisesoftware');
     }
-    public function offshoresoftwarer(){
+    public function offshoresoftware(){
         return view('services.developmentservices.offshoresoftware');
     }
     public function aisoftwaredevelopment(){

@@ -52,7 +52,7 @@ Route::get('/webportal',[HireusController::class,'webportal'])->name('webportal'
 Route::get('/mobileapp',[HireusController::class,'mobileapp'])->name('mobileapp');
 Route::get('/frontenddevelopment',[HireusController::class,'frontenddevelopment'])->name('frontenddevelopment');
 Route::get('/enterprisesoftware',[HireusController::class,'enterprisesoftware'])->name('enterprisesoftware');
-Route::get('/offshoresoftware',[HireusController::class,'offshoresoftwarer'])->name('offshoresoftwarer');
+Route::get('/offshoresoftware',[HireusController::class,'offshoresoftware'])->name('offshoresoftware');
 Route::get('/aisoftwaredevelopment',[HireusController::class,'aisoftwaredevelopment'])->name('aisoftwaredevelopment');
 
 // Support Services

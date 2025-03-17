@@ -107,20 +107,20 @@
         <div class="row align-items-center">
                 <div class="content">
                     <h3>Benefits of Hiring React Native Developers from MaMo Technolabs</h3>
-                            <ul>
-                                <li><strong>Cost-Effective Development:</strong> With React Native, one can develop
-                                    That have a single codebase for multiple platforms thus saving much cost.
-                                </li>
-                                <li><strong>Time to Market:</strong> we could make the
-                                    development process, so you can bring your app to market faster.</li>
-                                <li><strong>Scalable Solutions:</strong> Building Applications for Growth with Your Business
-                                    This makes them scalable with your growing user base.</li>
-                                <li><strong>Clear Process and Transparent Outcome:</strong> We maintain clear communication
-                                    You will be updated on everything happening during the process.</li>
-                                <li><strong>Dedicated Team:</strong> With the developers of React Native from MaMo
-                                    Technolabs provides you with dedicated teams that work solely on your project, hence ensuring
-                                    exceptional results.</li>
-                            </ul>
+                    <ul>
+                        <li><strong>Cost-Effective Development:</strong> With React Native, one can develop
+                            That have a single codebase for multiple platforms thus saving much cost.
+                        </li>
+                        <li><strong>Time to Market:</strong> we could make the
+                            development process, so you can bring your app to market faster.</li>
+                        <li><strong>Scalable Solutions:</strong> Building Applications for Growth with Your Business
+                            This makes them scalable with your growing user base.</li>
+                        <li><strong>Clear Process and Transparent Outcome:</strong> We maintain clear communication
+                            You will be updated on everything happening during the process.</li>
+                        <li><strong>Dedicated Team:</strong> With the developers of React Native from MaMo
+                            Technolabs provides you with dedicated teams that work solely on your project, hence ensuring
+                            exceptional results.</li>
+                    </ul>
             </div>
         </div>
     </div>
@@ -133,12 +133,12 @@
         <div class="row align-items-center">
                 <div class="content">
                     <h3>Get Started with MaMo Technolabs</h3>
-                    <p>
-                        READY to build a rugged and cross-platform mobile application? Let's partner with MaMo Technolabs and
-                        Utilize our development expertise in React Native.
-                        Contact us today to discuss your project and take that first step toward turning your
-                        vision into reality.
-                    </p>
+                            <p>
+                                READY to build a rugged and cross-platform mobile application? Let's partner with MaMo Technolabs and
+                                Utilize our development expertise in React Native.
+                                Contact us today to discuss your project and take that first step toward turning your
+                                vision into reality.
+                            </p>
             </div>
         </div>
     </div>
