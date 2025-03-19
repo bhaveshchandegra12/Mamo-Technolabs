@@ -7,7 +7,7 @@
     <title>Blink - Startup & SaaS Bootstrap 5 Template.</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('user\img\hero\logo.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('user/img/logo/logo.png') }}" />
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="{{ asset('user/css/bootstrap.min.css') }}" />
@@ -39,7 +39,7 @@
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo/logo.svg" alt="Logo">
+                                <img src="{{ asset('user/img/logo/logo.png') }}" alt="Logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -52,9 +52,9 @@
                                 <ul id="nav" class="navbar-nav ms-auto">
                                 {{-- Start Hire Us  --}}
                                 <li class="nav-item">
-                                    <a class="dd-menu collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#services-menu"
-                                        aria-controls="services-menu" aria-expanded="false" aria-label="Toggle navigation">Hire us</a>
-                                    <div class="sub-menu collapse custom-dropdown" id="services-menu" style="width:700px">
+                                    <a class="dd-menu collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#hireus-menu"
+                                        aria-controls="hireus-menu" aria-expanded="false" aria-label="Toggle navigation">Hire us</a>
+                                    <div class="sub-menu collapse custom-dropdown" id="hireus-menu" style="width:700px">
                                         <div class="row">
                                             <!-- Column 1 -->
                                             <div class="col-md-2">
